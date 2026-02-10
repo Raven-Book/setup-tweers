@@ -1,0 +1,20 @@
+name: Setup TweeRS
+description: Download and setup TweeRS CLI for building .twee files
+branding:
+  icon: book-open
+  color: purple
+inputs:
+  version:
+    description: TweeRS version to install. Use "latest" for the newest release.
+    required: false
+    default: latest
+  token:
+    description: GitHub token for API requests to avoid rate limits
+    required: false
+    default: "${{ github.token }}"
+outputs:
+  version:
+    description: The installed TweeRS version
+runs:
+  using: node24
+  main: dist/index.js

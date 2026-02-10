@@ -1,0 +1,20 @@
+{
+  "name": "setup-tweers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GitHub Action to download and setup TweeRS CLI",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js -o dist --license licenses.txt",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@actions/core": "^3.0.0",
+    "@actions/http-client": "^4.0.0",
+    "@actions/tool-cache": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.3",
+    "vitest": "^4.0.18"
+  }
+}
