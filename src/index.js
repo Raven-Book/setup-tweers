@@ -1,5 +1,5 @@
-import core from "@actions/core";
-import tc from "@actions/tool-cache";
+import * as core from "@actions/core";
+import * as tc from "@actions/tool-cache";
 import { getAssetName, getRelease, parseVersion } from "./setup.js";
 
 const TOOL_NAME = "tweers";
