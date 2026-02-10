@@ -16,5 +16,5 @@ outputs:
   version:
     description: The installed TweeRS version
 runs:
-  using: node24
+  using: node20
   main: dist/index.js
